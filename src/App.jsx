@@ -50,7 +50,7 @@
 // import StudentCard from "./components/StudentCard";
 // import Counter from "./components/Counter";
 // import UserDetails from "./components/UserDetails";
-// import Pagination from "./components/pagination";
+// import Pagination from "./components/Pagination";
 // import Footer_1 from './components/Footer_1';
 
 
