@@ -10,7 +10,7 @@
 
 
 import { useContext,useEffect } from "react"
-import Pagination from "./pagination"
+import Pagination from "./Pagination"
 //Props Drilling:The component such as pagination is nested in Footer this is called prop drilling
 const Footer_1=()=>{
     return(
