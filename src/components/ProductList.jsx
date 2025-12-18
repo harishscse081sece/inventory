@@ -8,7 +8,7 @@ const ProductList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:3000/products");
+      const res = await axios.get("https://vite-backend-1sq4.onrender.com/products");
       setProducts(res.data);
     };
     fetchData();
