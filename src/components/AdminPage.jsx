@@ -17,7 +17,7 @@ const AdminPage = () => {
             image
         };
 
-        const response = await axios.post('http://localhost:3000/products', productData);
+        const response = await axios.post('https://vite-backend-1sq4.onrender.com/products', productData);
         
         alert('Product added successfully!');
         setName('');
