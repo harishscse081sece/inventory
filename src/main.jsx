@@ -19,7 +19,13 @@ const AppRouter = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('https://vite-backend-1sq4.onrender.com/products');
+                const response = await fetch('https://vite-backend-1sq4.onrender.com/products', {
+                method: 'GET',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
                 const data = await response.json();
                 setProducts(data);
             } catch (error) {

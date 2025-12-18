@@ -8,7 +8,11 @@ const ProductList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get("https://vite-backend-1sq4.onrender.com/products");
+      const res = await axios.get("https://vite-backend-1sq4.onrender.com/products", {
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
       setProducts(res.data);
     };
     fetchData();
